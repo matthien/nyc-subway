@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visual timeline exploring the history of the NYC subway system">
+    <title>NYC Subway History Timeline</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Three Column Layout Container -->
+    <div class="container">
+        
+        <!-- LEFT SIDEBAR: Decade Navigation -->
+        <aside class="decade-nav">
+            <nav>
+                <h3 class="decade-link active" data-decade="1900s">1900s</h3>
+                <h3 class="decade-link" data-decade="1910s">1910s</h3>
+                <h3 class="decade-link" data-decade="1920s">1920s</h3>
+                <h3 class="decade-link" data-decade="1930s">1930s</h3>
+                <h3 class="decade-link" data-decade="1940s">1940s</h3>
+                <h3 class="decade-link" data-decade="1950s">1950s</h3>
+                <h3 class="decade-link" data-decade="1960s">1960s</h3>
+                <h3 class="decade-link" data-decade="1970s">1970s</h3>
+                <h3 class="decade-link" data-decade="1980s">1980s</h3>
+                <h3 class="decade-link" data-decade="1990s">1990s</h3>
+                <h3 class="decade-link" data-decade="2000s">2000s</h3>
+                <h3 class="decade-link" data-decade="2010s">2010s</h3>
+                <h3 class="decade-link" data-decade="2020s">2020s</h3>
+            </nav>
+        </aside>
+
+        <!-- CENTER: Main Timeline -->
+        <main class="timeline">
+            
+            <!-- Timeline Event 1 (Example) -->
+            <article class="timeline-event" data-decade="1900s">
+                <div class="event-content">
+                    <span class="event-year">1904</span>
+                    <h2 class="event-title">The First Subway Line Opens</h2>
+                    <p class="event-description">
+                        The New York City Subway's first line opened on October 27, 1904, running from City Hall to 145th Street. 
+                        Operated by the Interborough Rapid Transit Company (IRT), the line was an instant success, carrying 
+                        150,000 passengers on its first day of operation.
+                    </p>
+                    <div class="event-image">
+                        <img src="images/1904-1.webp" alt="First subway opening 1904">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Timeline Event 2 (Example) -->
+            <article class="timeline-event" data-decade="1910s">
+                <div class="event-content">
+                    <span class="event-year">1918</span>
+                    <h2 class="event-title">Dual Contracts Expansion</h2>
+                    <p class="event-description">
+                        The Dual Contracts agreements between the city and private operators led to a massive expansion 
+                        of the subway system. New lines were built in Brooklyn, Queens, and the Bronx, tripling the 
+                        system's size and establishing much of the network we know today.
+                    </p>
+                    <div class="event-image">
+                        <img src="images/1921-1.jpg" alt="Dual Contracts expansion 1918">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Timeline Event 3 (Example) -->
+            <article class="timeline-event" data-decade="1940s">
+                <div class="event-content">
+                    <span class="event-year">1940</span>
+                    <h2 class="event-title">City Takes Control</h2>
+                    <p class="event-description">
+                        The city unified the three separate subway systems (IRT, BMT, and IND) under public operation, 
+                        creating the modern New York City Transit Authority. This marked the end of private subway 
+                        operation and the beginning of the unified fare system.
+                    </p>
+                    <div class="event-image">
+                        <img src="images/1940-1.png" alt="Subway unification 1940">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Add your remaining 7 events here following the same structure -->
+            <!-- Just copy the <article> block above and update the content -->
+
+        </main>
+
+        <!-- RIGHT SIDEBAR: Contextual Events -->
+        <aside class="context-sidebar">
+            <div class="context-container">
+                <h4 class="context-header">WORLD EVENTS</h4>
+                
+                <div class="context-event">
+                    <img src="images/1904-2.jpg" alt="Wright Brothers Flight">
+                    <p class="context-caption">Wright Brothers First Flight (1903)</p>
+                </div>
+
+                <div class="context-event">
+                    <img src="images/1904-3.jpg" alt="San Francisco Earthquake">
+                    <p class="context-caption">San Francisco Earthquake (1906)</p>
+                </div>
+
+                <div class="context-event">
+                    <img src="images/1904-4.webp" alt="Teddy Roosevelt">
+                    <p class="context-caption">Theodore Roosevelt Presidency</p>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

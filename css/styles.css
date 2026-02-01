@@ -1,0 +1,42 @@
+/* ===================================
+   SECTION 1: CSS RESET & BASE STYLES
+   =================================== */
+
+/* CSS Reset - removes browser default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* Base styles for the entire page */
+body {
+    background-color: #222222;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Default link styling */
+a {
+    color: #FFC628;
+    text-decoration: none;
+}
+
+/* ===================================
+   SECTION 2: THREE-COLUMN GRID LAYOUT
+   =================================== */
+
+   .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
