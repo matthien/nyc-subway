@@ -31,7 +31,7 @@ a {
    SECTION 2: THREE-COLUMN GRID LAYOUT
    =================================== */
 
-   .container {
+.container {
     display: grid;
     grid-template-columns: 200px 1fr 300px;
     gap: 40px;
@@ -40,3 +40,143 @@ a {
     padding: 40px 20px;
     min-height: 100vh;
 }
+
+/* ===================================
+   SECTION 3: LEFT SIDEBAR - DECADE NAVIGATION
+   =================================== */
+
+.decade-nav {
+    position: sticky; 
+    top: 40px;
+    height: fit-content;
+}
+
+.decade-nav nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.decade-link {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.50);
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.decade-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.decade-link.active {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+/* ===================================
+   SECTION 4: CENTER TIMELINE - EVENTS
+   =================================== */
+
+.timeline {
+    padding: 0 20px;
+}
+
+.timeline-event {
+    margin-bottom: 80px;
+    scroll-margin-top: 100px;
+}
+
+.event-content {
+    max-width: 700px;
+}
+
+.event-year {
+    display: block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: #FFC628;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-title {
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.event-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 24px;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* ===================================
+   SECTION 5: RIGHT SIDEBAR - CONTEXTUAL EVENTS
+   =================================== */
+
+.context-sidebar {
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+    width: 300px;
+}
+
+.context-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.context-header {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.context-event {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.context-event img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.context-caption {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
